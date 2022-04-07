@@ -1,0 +1,21 @@
+@import '../../../scss/generic/variables/variables';
+.Header {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    &__menuArea {
+        height: 100%;
+        padding: 0;
+        position: relative;
+        background-color: $mainColorDarker;
+        color: $mainColorLighter;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &__title {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
