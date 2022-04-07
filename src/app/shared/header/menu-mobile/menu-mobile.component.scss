@@ -1,4 +1,4 @@
-@import '../../../../scss/generic/variables/variables';
+@import '../../../../scss/generic/generic';
 .MenuMobileButton {
     width: 50px;
     height: 50px;
@@ -20,4 +20,55 @@
     .textMenu {
         font-size: 0.65rem;
     }
+}
+
+.MenuMobile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: $mainColor;
+    padding: 0 1rem;
+    transition: $mainTransition;
+    // Button Close
+    &__buttonClose {
+        width: 100%;
+        padding: 0.5rem 0rem;
+        text-align: right;
+        button {
+            background-color: transparent;
+            border: none;
+            outline: 0;
+            color: white;
+        }
+    }
+    // Logo
+    &__logo {
+        position: relative;
+        padding: 1rem;
+        background-color: white;
+    }
+    // Menu
+    &__menu {
+        &__list {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            &__item {
+                font-size: 1.5rem;
+                &__link {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.hiddenMenu {
+    left: -300px;
 }

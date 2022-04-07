@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from '../../../../assets/json/menu.json';
 
 @Component({
   selector: 'app-menu-mobile',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-mobile.component.scss']
 })
 export class MenuMobileComponent implements OnInit {
+
+  menu: any = (data as any).default;
+  hiddenMenu: boolean = true;
 
   constructor() { }
 

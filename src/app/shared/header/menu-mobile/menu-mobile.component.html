@@ -1,1 +1,17 @@
-<button class="MenuMobileButton" id="MenuMobileButton"><i class="fa-solid fa-bars iconMenu"></i><span class="textMenu">MENU</span></button>
+<button class="MenuMobileButton" id="MenuMobileButton" (click)="hiddenMenu = false"><i class="fa-solid fa-bars iconMenu"></i><span class="textMenu">MENU</span></button>
+
+<div class="MenuMobile" [ngClass]="hiddenMenu ? 'hiddenMenu' : ''">
+    <div class="MenuMobile__buttonClose">
+        <button (click)="hiddenMenu = true"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <picture class="MenuMobile__logo mt-1 mb-3">
+        <img src="../../../../assets/images/logo/Logo 01.svg" alt="Masterisand Logo" class="img-fluid">
+    </picture>
+    <nav class="MenuMobile__menu">
+        <ul class="MenuMobile__menu__list">
+            <li *ngFor="let item of menu" class="MenuMobile__menu__list__item">
+                <a class="MenuMobile__menu__list__item__link" routerLink="{{item.url}}">{{item.title}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>

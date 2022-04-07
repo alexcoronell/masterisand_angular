@@ -1,0 +1,21 @@
+[{
+        "title": "Inicio",
+        "url": ""
+    },
+    {
+        "title": "La Empresa",
+        "url": "/laempresa"
+    },
+    {
+        "title": "Servicios",
+        "url": "/servicios"
+    },
+    {
+        "title": "Catálogo",
+        "url": "/catalogo"
+    },
+    {
+        "title": "Blog  ",
+        "url": "/blog"
+    }
+]
