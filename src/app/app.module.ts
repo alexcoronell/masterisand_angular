@@ -11,6 +11,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MenuMobileComponent } from './shared/header/menu-mobile/menu-mobile.component';
 import { MenuDesktopComponent } from './shared/header/menu-desktop/menu-desktop.component';
+import { BasicDataComponent } from './shared/footer/basic-data/basic-data.component';
+import { SocialMediaComponent } from './shared/footer/social-media/social-media.component';
+import { CopyrightComponent } from './shared/footer/copyright/copyright.component';
+import { GoUpComponent } from './shared/footer/go-up/go-up.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { MenuDesktopComponent } from './shared/header/menu-desktop/menu-desktop.
     HeaderComponent,
     FooterComponent,
     MenuMobileComponent,
-    MenuDesktopComponent
+    MenuDesktopComponent,
+    BasicDataComponent,
+    SocialMediaComponent,
+    CopyrightComponent,
+    GoUpComponent
   ],
   imports: [
     BrowserModule,
