@@ -1,0 +1,31 @@
+{
+    "title": "Masterisand",
+    "phones1": "+57 4 511 4735",
+    "cellphone": "+57 313 888 5427",
+    "email": "protoprintid@gmail.com",
+    "address1": "Sede Centro: Carrera 54 #54-72",
+    "address2": "Sede Belén: Carrera 82B #20-32",
+    "time1": "Lunes a Viernes de 9:00am a 6:00pm",
+    "time2": "Sábados de 9:00am a 1:00pm",
+    "socialMedia": [{
+            "title": "Facebook",
+            "url": ""
+        },
+        {
+            "title": "Twitter",
+            "url": ""
+        },
+        {
+            "title": "Instagram",
+            "url": ""
+        },
+        {
+            "title": "Youtube",
+            "url": ""
+        },
+        {
+            "title": "Email",
+            "url": "protoprintid@gmail.com"
+        }
+    ]
+}
