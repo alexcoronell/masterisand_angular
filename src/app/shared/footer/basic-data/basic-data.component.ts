@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from '../../../../assets/json/dataBusiness.json';
 
 @Component({
   selector: 'app-basic-data',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicDataComponent implements OnInit {
 
+  dataBusiness: any = (data as any).default;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.table(this.dataBusiness);
   }
 
 }
