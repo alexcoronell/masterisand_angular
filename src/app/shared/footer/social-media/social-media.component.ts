@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from '../../../../assets/json/dataBusiness.json';
 
 @Component({
   selector: 'app-social-media',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialMediaComponent implements OnInit {
 
+  dataBusiness: any = (data as any).default;
+  socialMedia: any = this.dataBusiness.socialMedia;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.socialMedia);
   }
 
 }

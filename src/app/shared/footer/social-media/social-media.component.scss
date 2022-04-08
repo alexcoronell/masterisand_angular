@@ -1,0 +1,64 @@
+@import '../../../../scss/generic/generic';
+.SocialMedia {
+    width: 100%;
+    background-color: $mainColorMedium;
+    color: white;
+    &__content {
+        &__list {
+            list-style: none;
+            display: flex;
+            max-width: 350px;
+            margin: auto;
+            padding: 0;
+            align-items: center;
+            justify-content: space-around;
+            opacity: 0.8;
+            &__item {
+                width: 45px;
+                height: 45px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px !important;
+                overflow: hidden;
+                border: none;
+                transition: $mainTransition;
+                &:hover {
+                    opacity: 1;
+                }
+                &__link {
+                    text-decoration: none;
+                    color: $mainColorMedium;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &__link {
+                color: white;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 100px;
+                }
+                .iconCall {
+                    font-size: 3.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .SocialMedia {
+        &__content {}
+    }
+}
