@@ -1,1 +1,17 @@
-<p>menu-desktop works!</p>
+<button class="buttonDesktopMenu closeButton" (click)="hiddenMenu = !hiddenMenu">
+  <i class="fa-solid fa-xmark iconMenu"></i>
+  <span class="textMenu">CLOSE</span>
+</button>
+
+<button class="buttonDesktopMenu" (click)="hiddenMenu = !hiddenMenu" [ngClass]="!hiddenMenu ? 'hiddenButton' : ''">
+  <i class="fa-solid fa-bars iconMenu"></i>
+  <span class="textMenu">MENU</span>
+</button>
+
+<nav class="MenuDesktop" [ngClass]="hiddenMenu ? 'hidden' : ''">
+    <ul class="MenuDesktop__list">
+        <li class="MenuDesktop__list__item" *ngFor="let item of menu, index as i">
+            <a routerLink="{{item.url}}" id="link{{i}}" class="MenuDesktop__list__item__link">{{item.title}}</a>
+        </li>
+    </ul>
+</nav>
