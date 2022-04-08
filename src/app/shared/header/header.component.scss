@@ -3,11 +3,18 @@
     width: 100%;
     height: 50px;
     padding: 0;
+    &__background--1 {
+        height: 50px;
+        display: absolute;
+        background-color: $mainColorDarker;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
     &__menuArea {
         height: 100%;
         padding: 0;
         position: relative;
-        background-color: $mainColorDarker;
         color: $mainColorLighter;
         display: flex;
         flex-direction: row;
@@ -16,6 +23,34 @@
         &__title {
             padding: 0;
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Header {
+        &__background--2 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Header {
+        height: 100px;
+        overflow: hidden;
+        &__menuArea {
+            &__title {
+                display: none;
+            }
+        }
+        &__background--2 {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            height: 50px;
+            background-color: rgba($mainColorDarkest, 0.4);
         }
     }
 }
