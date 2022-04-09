@@ -15,6 +15,7 @@ import { BasicDataComponent } from './shared/footer/basic-data/basic-data.compon
 import { SocialMediaComponent } from './shared/footer/social-media/social-media.component';
 import { CopyrightComponent } from './shared/footer/copyright/copyright.component';
 import { GoUpComponent } from './shared/footer/go-up/go-up.component';
+import { CarrouselComponent } from './pages/home/carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { GoUpComponent } from './shared/footer/go-up/go-up.component';
     BasicDataComponent,
     SocialMediaComponent,
     CopyrightComponent,
-    GoUpComponent
+    GoUpComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,
