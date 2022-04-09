@@ -16,6 +16,10 @@ import { SocialMediaComponent } from './shared/footer/social-media/social-media.
 import { CopyrightComponent } from './shared/footer/copyright/copyright.component';
 import { GoUpComponent } from './shared/footer/go-up/go-up.component';
 import { CarrouselComponent } from './pages/home/carrousel/carrousel.component';
+import { BusinessSectionComponent } from './pages/home/business-section/business-section.component';
+import { ServicesSectionComponent } from './pages/home/services-section/services-section.component';
+import { PromotionsSectionComponent } from './pages/home/promotions-section/promotions-section.component';
+import { ContactSectionComponent } from './pages/home/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { CarrouselComponent } from './pages/home/carrousel/carrousel.component';
     SocialMediaComponent,
     CopyrightComponent,
     GoUpComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    BusinessSectionComponent,
+    ServicesSectionComponent,
+    PromotionsSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,
