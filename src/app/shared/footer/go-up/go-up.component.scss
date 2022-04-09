@@ -1,0 +1,8 @@
+@import '../../../../scss/generic/generic';
+button.GoUp {
+    width: 100%;
+    background-color: $mainColorLighter;
+    color: $mainColorDarker;
+    border: none;
+    outline: 0;
+}

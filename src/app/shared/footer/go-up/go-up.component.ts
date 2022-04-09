@@ -12,4 +12,8 @@ export class GoUpComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goUp() {
+    window.scroll(0,0)
+  }
+
 }
