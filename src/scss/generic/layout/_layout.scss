@@ -2,14 +2,13 @@ $minHeightDefaultSection: 300px;
 .defaultSection {
     padding: 0;
     margin: 3rem auto;
-    border: 1px solid black;
     &__content {
+        background-color: white;
         &__titleArea,
         &__textArea {
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
         }
         &__titleArea {
             background-color: $mainColor;
@@ -41,9 +40,6 @@ $minHeightDefaultSection: 300px;
             min-height: $minHeightDefaultSection;
             &__titleArea {
                 min-height: $minHeightDefaultSection;
-                &__title {
-                    text-align: left;
-                }
             }
         }
     }

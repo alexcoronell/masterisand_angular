@@ -1,0 +1,36 @@
+@import '../../../../scss/generic/generic';
+.ServicesSection {
+    &__content {
+        &__textArea {
+            &__buttonBox {
+                padding: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &__button {
+                    border: 5px solid $mainColor;
+                    border-radius: 50%;
+                    width: 200px;
+                    height: 200px;
+                    outline: 0;
+                    background-color: transparent;
+                    overflow: hidden;
+                    padding: 0;
+                    background-position: center;
+                    background-size: cover;
+                    span {
+                        background-color: $mainColor;
+                        display: block;
+                        padding: .5rem 0;
+                        opacity: 0.7;
+                        transition: $mainTransition;
+                        color: white;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

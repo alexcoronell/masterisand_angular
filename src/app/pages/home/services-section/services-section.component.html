@@ -1,1 +1,46 @@
-<p>services-section works!</p>
+<main class="defaultSection ServicesSection">
+    <div class="defaultSection__content container">
+        <div class="row">
+            <div class="ServicesSection__content defaultSection__content__titleArea col-12 col-md-4 col-lg-3">
+                <h3 class="defaultSection__content__titleArea__title">{{titleSection}}</h3>
+            </div>
+            <div class="ServicesSection__content__textArea defaultSection__content__textArea col-md-8 col-lg-9">
+                <div class="row">
+                    <div class="ServicesSection__content__textArea__buttonBox defaultSection__content__textArea__buttonBox col-12 col-sm-6 col-lg-4" *ngFor="let service of services, index as i">
+                        <button class="ServicesSection__content__textArea__buttonBox__button" type="button" data-bs-toggle="modal" [attr.data-bs-target]="'#Modal'+i" style="background-image: url('../../../../assets/images/services/{{service.img}}');">
+                      <span>{{service.title}}</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- Modal -->
+<article *ngFor="let service of services, index as i" class="modal fade" id="Modal{{i}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{service.title}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <picture class="col-4">
+                            <img src="../../../../assets/images/services/{{service.img}}" alt="{{service.title}}" class="img-fluid">
+                        </picture>
+                        <div class="col-8">
+                            <p *ngFor="let p of service.description">{{p}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</article>
