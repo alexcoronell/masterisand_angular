@@ -1,1 +1,12 @@
-<p>business-section works!</p>
+<section class="defaultSection">
+    <div class="defaultSection__content container">
+        <div class="row">
+            <div class="defaultSection__content__titleArea col-12 col-md-4 col-lg-3">
+                <h3 class="defaultSection__content__titleArea__title">{{descriptionBusiness.title}}</h3>
+            </div>
+            <div class="defaultSection__content__textArea col-md-8 col-lg-9">
+                <p *ngFor="let item of descriptionBusiness.description">{{item}}</p>
+            </div>
+        </div>
+    </div>
+</section>
