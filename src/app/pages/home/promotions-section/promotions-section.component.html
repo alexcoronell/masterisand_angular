@@ -1,1 +1,37 @@
 <p>promotions-section works!</p>
+<section class="defaultSection HomePromotions">
+    <div class="defaultSection__content container">
+        <div class="row">
+            <div class="defaultSection__content__titleArea col-12 col-md-4 col-lg-3">
+                <h3 class="defaultSection__content__titleArea__title">{{sectionTitle}}</h3>
+            </div>
+            <div class="defaultSection__content__textArea col-md-8 col-lg-9">
+                <div class="HomePromotions__carouselBox">
+                    <div class="HomePromotions__carouselBox__images">
+                        <div class="HomePromotions__carouselBox__images__arrow">
+                            <button class="HomePromotions__carouselBox__images__arrow__button" (click)="prevImage()">
+                              <i class="fa-solid fa-circle-arrow-left"></i>
+                      </button>
+                        </div>
+                        <picture class="HomePromotions__carouselBox__images__picture">
+                            <img src="../../../../assets/images/promotions/botones_personalizados.jpg" alt="" class="img-fluid HomePromotions__carouselBox__images__picture__imgStatic" style="opacity: 0;">
+                            <img src="../../../../assets/images/promotions/{{img.img}}" *ngFor="let img of promotions; index as i" alt="{{img.title}}" class="img-fluid HomePromotions__carouselBox__images__picture__img" [ngClass]="currentImage == i ? 'showImage': ''">
+                        </picture>
+                        <div class="HomePromotions__carouselBox__images__arrow">
+                            <button class="HomePromotions__carouselBox__images__arrow__button" (click)="nextImage()">
+                              <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                        </div>
+                    </div>
+                    <div class="HomePromotions__carouselBox__thumbnailBox">
+                        <div style="width: 100%"></div>
+                        <picture class="HomePromotions__carouselBox__thumbnailBox__images">
+                            <button class="HomePromotions__carouselBox__thumbnailBox__images__button" (click)="chargeImage(i)" *ngFor="let img of promotions; index as i" style="width: {{finalWidth}}%"><img src="../../../../assets/images/promotions/thumbnails/{{img.img}}" alt="{{img.title}}" class="HomePromotions__carouselBox__thumbnailBox__images__button__img img-fluid" ></button>
+                        </picture>
+                        <div style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

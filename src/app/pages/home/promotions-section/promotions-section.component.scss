@@ -1,0 +1,57 @@
+@import '../../../../scss/generic/generic';
+.HomePromotions {
+    &__carouselBox {
+        width: 100%;
+        &__images {
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            &__arrow {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &__button {
+                    width: 95%;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 50%;
+                    color: $mainColor;
+                    font-size: 1.5rem;
+                }
+            }
+            &__picture {
+                position: relative;
+                width: 100%;
+                &__img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    transition: $slowTransition;
+                }
+            }
+        }
+        &__thumbnailBox {
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            &__images {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0.5rem 0;
+                &__button {
+                    border: none;
+                    padding: 0 !important;
+                    background-color: transparent;
+                    outline: 0;
+                }
+            }
+        }
+    }
+}
+
+.showImage {
+    opacity: 1;
+}
