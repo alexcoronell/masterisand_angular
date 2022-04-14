@@ -1,0 +1,20 @@
+@import '../../../../scss/generic/generic';
+.ContactSection {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        &__form {
+            &__button {
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+        &__mapsArea {
+            &__iframe {
+                min-height: 250px;
+                padding: 0;
+                border: 4px solid $mainColor;
+            }
+        }
+    }
+}
