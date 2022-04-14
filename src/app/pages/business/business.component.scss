@@ -1,0 +1,25 @@
+@import '../../../scss/generic/generic';
+.BusinessPage {
+    &__content {
+        &__secondaryMobile {
+            &__accordion {
+                &__header {
+                    &__button {
+                        background-color: $mainColor;
+                        color: white;
+                        outline: 0;
+                        border: white;
+                        * {
+                            color: white !important;
+                        }
+                    }
+                }
+                &__content {
+                    p {
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

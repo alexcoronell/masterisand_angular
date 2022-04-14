@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from '../../../assets/json/descriptionBusiness.json';
 
 @Component({
   selector: 'app-business',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./business.component.scss']
 })
 export class BusinessComponent implements OnInit {
+
+  business: any = (data as any).default;
 
   constructor() { }
 

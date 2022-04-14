@@ -4,18 +4,18 @@
     },
     {
         "title": "La Empresa",
-        "url": "/laempresa"
+        "url": "la-empresa"
     },
     {
         "title": "Servicios",
-        "url": "/servicios"
+        "url": "servicios"
     },
     {
         "title": "Catálogo",
-        "url": "/catalogo"
+        "url": "catalogo"
     },
     {
         "title": "Blog  ",
-        "url": "/blog"
+        "url": "blog"
     }
 ]

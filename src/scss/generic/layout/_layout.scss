@@ -28,6 +28,10 @@ $minHeightDefaultSection: 300px;
     }
 }
 
+.pages {
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 767px) {
     .hideMobile {
         display: none;
