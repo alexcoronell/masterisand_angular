@@ -21,6 +21,7 @@ import { ServicesSectionComponent } from './pages/home/services-section/services
 import { PromotionsSectionComponent } from './pages/home/promotions-section/promotions-section.component';
 import { ContactSectionComponent } from './pages/home/contact-section/contact-section.component';
 import { PresentationPageComponent } from './shared/presentation-page/presentation-page.component';
+import { CatalogueComponent } from './pages/catalogue/catalogue.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PresentationPageComponent } from './shared/presentation-page/presentati
     ServicesSectionComponent,
     PromotionsSectionComponent,
     ContactSectionComponent,
-    PresentationPageComponent
+    PresentationPageComponent,
+    CatalogueComponent
   ],
   imports: [
     BrowserModule,
