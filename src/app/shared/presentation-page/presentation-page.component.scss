@@ -1,0 +1,14 @@
+.PresentationPage {
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__content {
+        width: 100%;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+    }
+}

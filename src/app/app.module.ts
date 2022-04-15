@@ -20,6 +20,7 @@ import { BusinessSectionComponent } from './pages/home/business-section/business
 import { ServicesSectionComponent } from './pages/home/services-section/services-section.component';
 import { PromotionsSectionComponent } from './pages/home/promotions-section/promotions-section.component';
 import { ContactSectionComponent } from './pages/home/contact-section/contact-section.component';
+import { PresentationPageComponent } from './shared/presentation-page/presentation-page.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContactSectionComponent } from './pages/home/contact-section/contact-se
     BusinessSectionComponent,
     ServicesSectionComponent,
     PromotionsSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    PresentationPageComponent
   ],
   imports: [
     BrowserModule,

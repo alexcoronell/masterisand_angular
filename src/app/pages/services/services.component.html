@@ -1,1 +1,21 @@
-<p>services works!</p>
+<main class="pages ServicesPage">
+    <app-presentation-page [title]="title" [background]="background"></app-presentation-page>
+
+    <article class="defaultSection" *ngFor="let service of services, index as i">
+        <div class="defaultSection__content container ServicesPage__content">
+            <div class="row">
+                <div class="defaultSection__content__titleArea ServicesPage__content__titleArea col-12 col-md-4 col-lg-3">
+                    <h3 class="defaultSection__content__titleArea__title">{{service.title}}</h3>
+                </div>
+                <div class="defaultSection__content__textArea ServicesPage__content__textArea col-md-8 col-lg-9 row">
+                    <div class="col-12 col-md-6">
+                        <img src="../../../assets/images/services/{{service.img}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p *ngFor="let item of service.description">{{item}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
