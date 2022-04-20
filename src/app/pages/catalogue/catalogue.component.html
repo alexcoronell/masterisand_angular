@@ -1,1 +1,37 @@
-<p>catalogue works!</p>
+<main class="cataloguePage pages">
+    <app-presentation-page [title]="title" [background]="background"></app-presentation-page>
+
+    <!-- Images Section -->
+    <section class="defaultSection py-3">
+        <div class="defaultSection__content container">
+            <div class="row">
+                <div class="defaultSection__content__titleArea col-12 col-md-4 col-lg-3">
+                    <h3 class="defaultSection__content__titleArea__title">Imágenes</h3>
+                </div>
+                <div class="defaultSection__content__textArea col-md-8 col-lg-9 row text-center py-3">
+                    <picture class="col-12 col-md-6 my-3" *ngFor="let img of catalogueImages, index as i">
+                        <img src="../../../assets/images/cataloguePage/{{img}}" alt="Imagen catálogo {{i}}" class="img-fluid">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Images Section -->
+    <section class="defaultSection py-3">
+        <div class="defaultSection__content container">
+            <div class="row">
+                <div class="defaultSection__content__titleArea col-12 col-md-4 col-lg-3">
+                    <h3 class="defaultSection__content__titleArea__title">Videos</h3>
+                </div>
+                <div class="defaultSection__content__textArea col-md-8 col-lg-9 row text-center py-3">
+                    <article class="col-12 col-md-6 my-3" *ngFor="let video of catalogueVideos, index as i">
+                        <video src="../../../assets/images/cataloguePage/videos/{{video}}" width="100%" controls>
+                      Your browser does not support the video tag.
+                    </video>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
