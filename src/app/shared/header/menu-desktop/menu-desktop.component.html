@@ -11,7 +11,7 @@
 <nav class="MenuDesktop" [ngClass]="hiddenMenu ? 'hidden' : ''">
     <ul class="MenuDesktop__list">
         <li class="MenuDesktop__list__item" *ngFor="let item of menu, index as i">
-            <a routerLink="{{item.url}}" id="link{{i}}" class="MenuDesktop__list__item__link">{{item.title}}</a>
+            <a routerLink="{{item.url}}" id="link{{i}}" class="MenuDesktop__list__item__link" (click)="hiddenMenu = !hiddenMenu">{{item.title}}</a>
         </li>
     </ul>
 </nav>
