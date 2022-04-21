@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
+  title: string = 'Blog'
+  background: string = 'background-blog.jpg';
+
   constructor() { }
 
   ngOnInit(): void {
