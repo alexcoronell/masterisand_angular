@@ -46,6 +46,13 @@
                     padding: 0 !important;
                     background-color: transparent;
                     outline: 0;
+                    &__circle {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #6c757d;
+                        margin: 0.5rem auto;
+                    }
                 }
             }
         }
@@ -54,4 +61,8 @@
 
 .showImage {
     opacity: 1;
+}
+
+.currentCircle {
+    background-color: $mainColor;
 }

@@ -1,3 +1,53 @@
+$textShadow: 2px 2px 3px $mainColorDarker;
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../../../assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-LightItalic;
+    src: url(../../../assets/fonts/Lato-LightItalic.ttf);
+}
+
+html {
+    font-family: Lato-Regular;
+}
+
+h3 {
+    font-style: italic;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-family: Lato-LightItalic;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #212529;
+}
+
+h5 {
+    font-size: 1.6rem;
+    color: $mainColorMedium;
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
+}
+
+.titleSection {
+    font-size: 1.4rem;
+    text-shadow: $textShadow;
+}
+
+@media screen and (min-width: 768px) {
+    .titleSection {
+        font-size: 2rem;
+    }
 }

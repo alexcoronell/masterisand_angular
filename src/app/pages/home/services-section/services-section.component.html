@@ -19,7 +19,7 @@
 
 
 <!-- Modal -->
-<article *ngFor="let service of services, index as i" class="modal fade" id="Modal{{i}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<article *ngFor="let service of services, index as i" class="ServicesSection__modal modal fade" id="Modal{{i}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -29,17 +29,17 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="row">
-                        <picture class="col-4">
+                        <picture class="col-12 col-md-4">
                             <img src="../../../../assets/images/services/{{service.img}}" alt="{{service.title}}" class="img-fluid">
                         </picture>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <p *ngFor="let p of service.description">{{p}}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>

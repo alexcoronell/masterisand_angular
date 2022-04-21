@@ -6,7 +6,7 @@
             </div>
             <div class="defaultSection__content__textArea col-md-8 col-lg-9">
                 <div class="HomePromotions__carouselBox">
-                    <div class="HomePromotions__carouselBox__images">
+                    <div class="HomePromotions__carouselBox__images py-3">
                         <div class="HomePromotions__carouselBox__images__arrow">
                             <button class="HomePromotions__carouselBox__images__arrow__button" (click)="prevImage()">
                               <i class="fa-solid fa-circle-arrow-left"></i>
@@ -25,7 +25,7 @@
                     <div class="HomePromotions__carouselBox__thumbnailBox">
                         <div style="width: 100%"></div>
                         <picture class="HomePromotions__carouselBox__thumbnailBox__images">
-                            <button class="HomePromotions__carouselBox__thumbnailBox__images__button" (click)="chargeImage(i)" *ngFor="let img of promotions; index as i" style="width: {{finalWidth}}%"><img src="../../../../assets/images/promotions/thumbnails/{{img.img}}" alt="{{img.title}}" class="HomePromotions__carouselBox__thumbnailBox__images__button__img img-fluid" ></button>
+                            <button class="HomePromotions__carouselBox__thumbnailBox__images__button" (click)="chargeImage(i)" *ngFor="let img of promotions; index as i" style="width: {{finalWidth}}%"><img src="../../../../assets/images/promotions/thumbnails/{{img.img}}" alt="{{img.title}}" class="HomePromotions__carouselBox__thumbnailBox__images__button__img img-fluid hideMobile" ><div class="HomePromotions__carouselBox__thumbnailBox__images__button__circle hideDesktop" [ngClass]="currentImage == i ? 'currentCircle': ''"></div></button>
                         </picture>
                         <div style="width: 100%"></div>
                     </div>

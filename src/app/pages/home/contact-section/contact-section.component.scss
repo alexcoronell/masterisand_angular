@@ -8,6 +8,14 @@
                 background-color: $mainColor;
                 color: white;
             }
+            input,
+            textarea {
+                border-color: $mainColor;
+            }
+            input::placeholder,
+            textarea::placeholder {
+                font-family: Lato-LightItalic;
+            }
         }
         &__mapsArea {
             &__iframe {
