@@ -1,9 +1,8 @@
+@import '../../../scss/generic/generic';
 .BlogPage {
     &__content {
-        min-height: 300px;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        &__textArea {
+            color: $mainColor
+        }
     }
 }
