@@ -10,5 +10,10 @@
     &__content {
         width: 100%;
         background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        padding: 0;
+        &__title {
+            margin: 0 auto;
+            line-height: 3rem;
+        }
     }
 }
