@@ -10,7 +10,7 @@ export class BusinessComponent implements OnInit {
 
   business: any = (data as any).default;
 
-  title: string = 'La Empresa'
+  title: string = 'Masterisand'
   background: string = 'background-quienessomos.jpg';
 
   constructor() { }
