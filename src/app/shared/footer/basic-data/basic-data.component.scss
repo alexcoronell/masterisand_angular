@@ -1,5 +1,7 @@
 @import '../../../../scss/generic/generic';
 .BasicData {
     background-color: $mainColor;
-    color: white;
+    * {
+        color: white;
+    }
 }
