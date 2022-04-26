@@ -1,0 +1,11 @@
+@import '../../../../scss/generic/generic';
+.BusinessSection {
+    &__content {
+        &__textArea {
+            flex-direction: column;
+            h1 {
+                color: $mainColor;
+            }
+        }
+    }
+}
