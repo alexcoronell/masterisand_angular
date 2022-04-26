@@ -9,7 +9,7 @@ import * as data from '../../../assets/json/services.json';
 })
 export class ServicesComponent implements OnInit {
   services: any = (data as any).default;
-  title: string = 'Servicios'
+  title: string = 'Servicios Digitales'
   background: string = 'background-servicios.jpg';
 
   constructor() { }
