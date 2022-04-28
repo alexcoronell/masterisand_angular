@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { CanonicalUrlService } from 'src/app/services/canonical-url.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private meta: Meta, private title: Title) {
+  constructor(private meta: Meta, private title: Title, private canonical: CanonicalUrlService) {
     this.meta.addTags([
       { name: 'description', content: 'Somos una empresa innovadora en servicios para medios impresos publicitarios, y que cuenta con profesionales que poseen una gran trayectoria y experiencia en las artes gráficas, arte final, preprensa, impresión de gran formato, publicidad impresa e impresión digital por demanda, Desarrollo Web y Marketing Digital.' },
       { name: 'author', content: 'Masterisand' },
@@ -25,6 +26,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.canonical.createLinkForCanonicalURL();
   }
 
 }
