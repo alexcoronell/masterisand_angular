@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from "@angular/common/http";
+
+// Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BusinessComponent } from './pages/business/business.component';
@@ -50,7 +53,9 @@ import { AnimateBackgroundComponent } from './shared/animate-background/animate-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
