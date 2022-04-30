@@ -18,7 +18,7 @@ export class ContactSectionComponent implements OnInit {
   email: FormControl = new FormControl("", [Validators.required, Validators.email]);
   message: FormControl = new FormControl("");
   honeypot: FormControl = new FormControl(""); // we will use this to prevent spam
-  googlesheet: string = 'https://script.google.com/macros/s/AKfycbzlToqwakTRCWJIvw5pHcigLamPUGXGmrrzvl8xfXN1g0BhkGbja3zCDmLgTG73nWLM8w/exec';
+  googlesheet: string = 'https://script.google.com/macros/s/AKfycbxhCVIJUqIuEI5HMAMFaI5Izl25S0xCbweSzmuJ_7WBJvjj1r3k6aDHzxB0_5MH6eHxbg/exec';
 
   submitted: boolean = false; // show and hide the success message
   isLoading: boolean = false; // disable the submit button if we're loading
@@ -63,7 +63,7 @@ export class ContactSectionComponent implements OnInit {
             this.form.reset();
             },
             (error) => {
-              alert('Error')
+            Swal.fire({icon: 'error', title: 'Oops...', text: 'Hubo un problema!'});
             this.form.enable(); // re enable the form after a success
             this.submitted = true; // show the response message
             this.isLoading = false; // re enable the submit button

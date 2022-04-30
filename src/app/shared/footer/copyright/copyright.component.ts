@@ -11,8 +11,6 @@ export class CopyrightComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.currentYear);
-  }
+  ngOnInit(): void {}
 
 }

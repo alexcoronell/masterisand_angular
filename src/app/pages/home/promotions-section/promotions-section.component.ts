@@ -18,7 +18,6 @@ export class PromotionsSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.finalWidth);
     this.changeImages()
   }
 

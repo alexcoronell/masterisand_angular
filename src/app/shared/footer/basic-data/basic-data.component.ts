@@ -12,8 +12,6 @@ export class BasicDataComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.table(this.dataBusiness);
-  }
+  ngOnInit(): void {}
 
 }
