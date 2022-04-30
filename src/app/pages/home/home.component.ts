@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.canonical.createLinkForCanonicalURL();
+    setTimeout(() => window.scrollTo(0, 0), 16);
   }
 
 }

@@ -30,6 +30,7 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.canonical.createLinkForCanonicalURL();
+    setTimeout(() => window.scrollTo(0, 0), 16);
   }
 
 }
