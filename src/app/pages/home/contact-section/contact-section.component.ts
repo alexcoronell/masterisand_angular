@@ -18,7 +18,7 @@ export class ContactSectionComponent implements OnInit {
   email: FormControl = new FormControl("", [Validators.required, Validators.email]);
   message: FormControl = new FormControl("");
   honeypot: FormControl = new FormControl(""); // we will use this to prevent spam
-  googlesheet: string = 'https://script.google.com/macros/s/AKfycbzZ2GVxMirIuwiCld5h7aWB8rz1s9Dbybql4UaROYpiA2oru9H4-H-bkINFt2V0SAC8/exec';
+  googlesheet: string = 'https://script.google.com/macros/s/AKfycbzSoXUL8lyWw8oKFAHyls5l6Ijn00raEOnpd1yPR87xieXGqNtlDjDZprfNocpCNp1I4g/exec';
 
   submitted: boolean = false; // show and hide the success message
   isLoading: boolean = false; // disable the submit button if we're loading
