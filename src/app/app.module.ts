@@ -27,6 +27,8 @@ import { PresentationPageComponent } from './shared/presentation-page/presentati
 import { CatalogueComponent } from './pages/catalogue/catalogue.component';
 import { AnimateBackgroundComponent } from './shared/animate-background/animate-background.component';
 
+// Sweet Alert
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +57,8 @@ import { AnimateBackgroundComponent } from './shared/animate-background/animate-
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, FormControl, Validators, FormGroupDirective } from '@angular/forms';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-contact-section',
   templateUrl: './contact-section.component.html',
@@ -37,8 +37,7 @@ export class ContactSectionComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onSubmit = (formDirective: FormGroupDirective) => {
     if (this.form.status == "VALID" && this.honeypot.value == "") {
@@ -52,9 +51,9 @@ export class ContactSectionComponent implements OnInit {
       this.http.post(this.googlesheet, formData).subscribe(
           (res: any) => {
             if(res["result"] == 'success') {
-              alert('Mensaje enviado');
+              Swal.fire('Excelente', 'Tu mensaje ha sido enviado', 'success');
             } else {
-              alert('Mensaje no enviado');
+              Swal.fire({icon: 'error', title: 'Oops...', text: 'Hubo un problema!'});
             }
             this.form.enable(); // re enable the form after a success
             this.submitted = true; // show the response message
