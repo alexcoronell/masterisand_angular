@@ -1,4 +1,4 @@
-@import '../../../scss/generic/variables/variables';
+@import '../../../scss/generic/generic';
 .Header {
     width: 100%;
     height: 50px;
@@ -50,6 +50,11 @@
             width: 100%;
             height: 50px;
             background-color: rgba($mainColorDarkest, 0.4);
+            overflow: hidden;
+            transition: $mainTransition;
+        }
+        &__background--2--hidden {
+            height: 0px !important;
         }
     }
 }
