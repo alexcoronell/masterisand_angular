@@ -51,7 +51,7 @@
             height: 50px;
             background-color: rgba($mainColorDarkest, 0.4);
             overflow: hidden;
-            transition: $mainTransition;
+            transition: $slowTransition;
         }
         &__background--2--hidden {
             height: 0px !important;
