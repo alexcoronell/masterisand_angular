@@ -7,6 +7,7 @@
         height: 50px;
         display: absolute;
         background-color: $mainColorDarker;
+        transition: $slowTransition;
         left: 0;
         top: 0;
         width: 100%;
@@ -42,6 +43,9 @@
             &__title {
                 display: none;
             }
+        }
+        &__background--1--scroll {
+            opacity: 0.7;
         }
         &__background--2 {
             position: absolute;
